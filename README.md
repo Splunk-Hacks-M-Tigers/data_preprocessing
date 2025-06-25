@@ -1,3 +1,5 @@
+# Data preprocessing
+
 The primary goal of this Python script is to transform a raw, unlabeled or minimally labeled dataset (specifically, the xTRam1/safe-guard-prompt-injection dataset from Hugging Face) into a structured CSV format that is optimized for Splunk's data ingestion capabilities and the Splunk MLTK's requirements for machine learning model training.
 
 This transformation involves:
@@ -52,3 +54,4 @@ The script strategically selects and generates specific columns to facilitate pr
       - Future Feature Engineering: In a more advanced machine learning model, these fields (once properly normalized or encoded) could serve as additional predictive features alongside the text-based features, enhancing detection accuracy by incorporating behavioral patterns.
 
     - How they are generated (Illustrative for PoC): For this hackathon/proof-of-concept, these fields are generated with illustrative, dummy values (e.g., random IPs within private ranges, fixed application names, sequential IDs). This is a simplification. In a production environment, these would be extracted from real log sources and would contain actual, correlated data reflecting genuine user behavior and attack patterns.
+
